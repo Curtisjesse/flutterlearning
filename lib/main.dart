@@ -85,10 +85,11 @@ class _MyHomePageState extends State<MyHomePage> {
     }
     return Scaffold(
       appBar: AppBar(
-        title: Text('word press'),
+        title: Text('Word Press'),
         titleTextStyle: TextStyle(
-          color: Colors.blue,
-          fontSize: 29,
+          color: Color.fromARGB(255, 1, 13, 114),
+          fontSize: 35,
+          fontWeight: FontWeight.w600,
         ),
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 9, 228, 118),
@@ -262,7 +263,7 @@ class FavoritesPage extends StatelessWidget {
               size: 27,
             ),
             title: Text(
-              pair.asLowerCase,
+              pair.asString[0].toUpperCase() + pair.asString.substring(1),
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 25,
